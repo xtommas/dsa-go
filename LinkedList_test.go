@@ -4,8 +4,8 @@ import (
 	"testing"
 )
 
-func TestDoublyLinkedList(t *testing.T) {
-	list := DoublyLinkedList{
+func TestLinkedList(t *testing.T) {
+	list := LinkedList{
 		head:   nil,
 		tail:   nil,
 		length: 0,
@@ -37,4 +37,5 @@ func TestDoublyLinkedList(t *testing.T) {
 	expect("remove", list.remove(9), 9, t)
 	expect("length", list.length, 3, t)
 	expect("get", list.get(0), 7, t)
+
 }
